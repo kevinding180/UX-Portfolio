@@ -14,17 +14,17 @@ header {
 }
 
 nav {
-  width: 100%; /* make the nav element take up the full width of the header */
+  width: 100%; 
   display: flex;
-  justify-content: space-between; /* align left and right items to the opposite ends of the container */
+  justify-content: space-between; 
 }
 .left-items {
-  display: flex; /* make the left items a flex container */
-  align-items: center; /* align logo and Kevin Ding vertically */
+  display: flex; 
+  align-items: center; 
 }
 .right-items {
-  display: flex; /* make the right items a flex container */
-  justify-content: flex-end; /* align the right items to the right */
+  display: flex; 
+  justify-content: flex-end; 
 }
 
 header nav a {
@@ -46,28 +46,28 @@ header nav a {
     <img src="media\Logo.png" alt="Logo">
 </div>
 
-
-
 /* Section Styles */
-section {
-  padding: 20px;
-  background-color: #f5e5c3;
-  display: flex;
-  align-items: center; /* align the items vertically */
+
+
+section#about h1{
+    text-align: center;
 }
+
 section#about {
   text-align: left;
-  width: 100%; /* set width to 100% */
-  display: flex; /* make the section a flex container */
-  flex-wrap: wrap; /* allow the flex items to wrap */
+  width: 100%; 
+  display: flex; 
+  flex-wrap: wrap; 
 }
+
+
 section#about img {
-  max-width: 40%; /* set width of the image */
-  margin-right: 20px; /* add margin to the right */
+  max-width: 40%; 
+  margin-right: 20px; 
 }
 
 section#about p {
-  width: 60%; /* set width of the description*/
+  width: 60%; 
 }
 
 section#projects {
@@ -75,7 +75,11 @@ section#projects {
   clear: both;
   display: flex;
   flex-wrap: wrap;
-  align-items: center; /* align the items vertically */
+  align-items: center; 
+}
+
+section#projects h1{
+    text-align: center;
 }
 
 section#projects li {
@@ -108,7 +112,7 @@ section#contact form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start; /* align the form to the top */
+  align-items: flex-start; 
 }
 section#contact form label {
   width: 100%;
@@ -132,11 +136,12 @@ section#contact form input[type="submit"] {
   cursor: pointer;
 }
 
-/* Footer Styles */
+/* Footer */
 footer {
   background-color: #9db6a9;
 }
 
+/* Any Flair I have */
 
 header {
   animation: fade-in 0.5s ease-in;
