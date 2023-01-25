@@ -1,93 +1,151 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Header Styles */
-  header {
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-  
-  header nav {
-    display: flex;
-    justify-content:flex-end
-  }
-  
-  header nav a {
-    color: #333;
-    text-decoration: none;
-    margin-right: 10px;
-  }
-  
-  /* Section Styles */
-  section {
-    padding: 20px;
-  }
-  
-  section#about {
-    text-align: left;
-    float: left;
-    width: 60%;
-    margin-left: 20px;
-    background-color: #f98f8171;
-  }
-  section#projects {
-    content: "";
-    clear: both;
-    display: table;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5e5c3;
 }
 
-  section#projects li {
-    list-style: none;
-    margin-bottom: 20px;
-  }
-  
-  section#projects img {
-    max-width: 100%;
-  }
-  
-  section#contact form label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  section#contact form input[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* Footer Styles */
-  footer {
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-  
-  footer h4 {
-    margin-bottom: 10px;
-  }
-  
-  footer ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  footer ul li {
-    margin-bottom: 10px;
-  }
-  
-  footer ul li a {
-    color: #333;
+/* Header Styles */
+header {
+  background-color: #9db6a9;
+  padding: 20px;
+  display: flex;
+}
+
+nav {
+  width: 100%; /* make the nav element take up the full width of the header */
+  display: flex;
+  justify-content: space-between; /* align left and right items to the opposite ends of the container */
+}
+.left-items {
+  display: flex; /* make the left items a flex container */
+  align-items: center; /* align logo and Kevin Ding vertically */
+}
+.right-items {
+  display: flex; /* make the right items a flex container */
+  justify-content: flex-end; /* align the right items to the right */
+}
+
+header nav a {
+    color: #000000;
     text-decoration: none;
-  }
-  
-  footer .text-center {
-    text-align: center;
-  }
-  
+    margin-right: 10px;
+}
+
+<style>
+:root {
+    font-size: 20px;
+}
+.left-items img {
+    width: 1rem;
+    height: 1rem;
+}
+</style>
+<div class="left-items">
+    <img src="media\Logo.png" alt="Logo">
+</div>
+
+
+
+/* Section Styles */
+section {
+  padding: 20px;
+  background-color: #f5e5c3;
+  display: flex;
+  align-items: center; /* align the items vertically */
+}
+section#about {
+  text-align: left;
+  width: 100%; /* set width to 100% */
+  display: flex; /* make the section a flex container */
+  flex-wrap: wrap; /* allow the flex items to wrap */
+}
+section#about img {
+  max-width: 40%; /* set width of the image */
+  margin-right: 20px; /* add margin to the right */
+}
+
+section#about p {
+  width: 60%; /* set width of the description*/
+}
+
+section#projects {
+  content: "";
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; /* align the items vertically */
+}
+
+section#projects li {
+  list-style: none;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#projects img {
+  max-width: 40%;
+  margin-right: 20px;
+}
+
+section#projects li p {
+  width: 60%;
+}
+
+
+section#contact {
+  padding: 20px;
+  text-align: center;
+}
+section#contact h1 {
+  margin-bottom: 20px;
+}
+section#contact form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; /* align the form to the top */
+}
+section#contact form label {
+  width: 100%;
+  margin-bottom: 10px;
+}
+section#contact form input[type="text"],
+section#contact form input[type="email"],
+section#contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+section#contact form input[type="submit"] {
+  background-color: #a1887f;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+
+/* Footer Styles */
+footer {
+  background-color: #9db6a9;
+}
+
+
+header {
+  animation: fade-in 0.5s ease-in;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
